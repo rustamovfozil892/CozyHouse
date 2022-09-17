@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 46px 70px;
+}
+
+.header {
+    background: url('./backgrounds/start-screen-gradient-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hn__logo {
+    text-decoration: none;
+}
+
+.hn__logo h1 {
+    font-weight: 400;
+    color: #F1CDB3;
+    letter-spacing: 0.06em;
+}
+
+.hn__logotype {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hn__logotype p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+}
+
+.hn__list {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.hn__list-link {
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #fafafa;
+}
+
+.hn__list-link:hover {
+    text-decoration: underline;
+    text-decoration-color: darkgoldenrod;
+    transition: all .9s;
+}
+
+.hh__left {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.header__house {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 223px;
+}
+
+.hh__left h1 {
+    font-weight: 400;
+    color: #fff;
+}
+
+.hh__left p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #cdcdcd;
+    max-width: 460px;
+    width: 100%;
+}
+
+.hh__left button {
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    color: #000;
+    padding: 15px 45px;
+    width: 207px;
+    border: none;
+    cursor: pointer;
+}
+
+.first__section {
+    padding: 80px 215px;
+}
+
+.fs__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fs__block--right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fs__block--right h1 {
+    font-weight: 400;
+    max-width: 370px;
+    width: 100%;
+    letter-spacing: 0.06em;
+    font-size: 35px;
+}
+
+.fs__block--right p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    max-width: 430px;
+    width: 100%;
+}
+
+.of__section {
+    padding: 80px 145px;
+    background: #f6f6f6;
+}
+
+.ofs__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.ofs__block--left h1 {
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.ofs__block--center {
+    display: flex;
+    gap: 90px;
+}
+
+.obr__pets {
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.obr__pets h3 {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+}
+
+.obr__pets-btn {
+    background: #fff;
+    border-radius: 100px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    color: #000;
+    padding: 15px 0;
+    width: 147px;
+    border: 0.5px solid #f1cdb3;
+    cursor: pointer;
+}
+
+.obr__pets-btn:hover {
+    background: #f1cdb3;
+    transition: all .9s;
+}
+
+.obr__btn {
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    color: #000;
+    padding: 15px 45px;
+    width: 207px;
+    border: none;
+    cursor: pointer;
+}
+
+.hs__section {
+    padding: 80px 127px;
+}
+
+.hss__block {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.hss__block--left h1 {
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.hss__block--center,
+.hss__block--right {
+    display: flex;
+    gap: 127px;
+}
+
+.hbr__help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hbr__help h3 {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+}
+
+.donate__section {
+    background: #fafafa;
+    padding: 91px 183px;
+}
+
+.ds__block {
+    display: flex;
+    gap: 30px;
+}
+
+.ds__block--right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ds__block--right h1 {
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    font-size: 35px;
+}
+
+.ds__block--right h3 {
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    font-size: 15px;
+}
+
+.dbr__btn {
+    background: #F1CDB3;
+    border-radius: 9px;
+    padding: 10px 15px;
+    width: 349px;
+    border: none;
+    cursor: pointer;
+}
+
+.dbr__btn:hover {
+    background: #fff;
+    border: 2px solid #f1cdb3;
+    transition: all .9s;
+}
+
+.ds__block--right p {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #b2b2b2;
+    max-width: 380px;
+    width: 100%;
+}
+
+.footer {
+    background: url('./backgrounds/start-screen-gradient-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fbl__content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.fc__list {
+    display: flex;
+    gap: 20px;
+}
+
+.fc__list p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.center-text {
+    max-width: 260px;
+    width: 100%;
+}
+
+.descr h1 {
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    max-width: 278px;
+    width: 100%;
+    color: #fff;
+}
+
+.fbl__content h1 {
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+    max-width: 270px;
+    width: 100%;
+    color: #fff;
+}

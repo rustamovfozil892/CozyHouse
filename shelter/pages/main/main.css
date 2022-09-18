@@ -32,6 +32,8 @@
     font-weight: 400;
     color: #F1CDB3;
     letter-spacing: 0.06em;
+    text-align: center;
+    font-size: 25px;
 }
 
 .hn__logotype {
@@ -87,6 +89,8 @@
 .hh__left h1 {
     font-weight: 400;
     color: #fff;
+    font-size: 25px;
+    text-align: center;
 }
 
 .hh__left p {
@@ -134,6 +138,8 @@
     width: 100%;
     letter-spacing: 0.06em;
     font-size: 35px;
+    font-size: 25px;
+    text-align: center;
 }
 
 .fs__block--right p {
@@ -166,20 +172,22 @@
     max-width: 400px;
     width: 100%;
     text-align: center;
+    font-size: 25px;
+    text-align: center;
 }
 
 .ofs__block--center {
     display: flex;
-    gap: 90px;
+    gap: 40px;
 }
 
 .left-arrow {
-    height: 52px;
-    width: 52px;
+    height: 40px;
+    width: 40px;
     align-self: center;
     display: flex;
     align-items: center;
-    padding: 23px 19px;
+    padding: 14px;
     border: 1px solid #f1cdb3;
     border-radius: 100px;
     background: #f6f6f6;
@@ -191,7 +199,8 @@
     transition: all .9s;
 }
 
-.obr__pets {
+.obr__pets,
+.obr__pets-1 {
     background: #fafafa;
     display: flex;
     flex-direction: column;
@@ -200,10 +209,15 @@
     padding-bottom: 30px;
 }
 
-.obr__pets h3 {
+.obr__pets h3,
+.obr__pets-1 h3 {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.06em;
+}
+
+.obr__pets-1 {
+    display: none;
 }
 
 .obr__pets-btn {
@@ -235,7 +249,9 @@
     cursor: pointer;
 }
 
-.obr__btn:hover, .hh__left button:hover, .dbr__btn:hover {
+.obr__btn:hover,
+.hh__left button:hover,
+.dbr__btn:hover {
     background: #fcd8cd;
     transition: all .9s;
 }
@@ -256,12 +272,14 @@
     font-size: 35px;
     letter-spacing: 0.06em;
     text-align: center;
+    font-size: 25px;
+    text-align: center;
 }
 
 .hss__block--center,
 .hss__block--right {
     display: flex;
-    gap: 127px;
+    gap: 83px;
 }
 
 .hbr__help {
@@ -271,10 +289,15 @@
     gap: 30px;
 }
 
+.hbr__help img {
+    width: 40px;
+}
+
 .hbr__help h3 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 0.06em;
+    text-align: center;
 }
 
 .donate__section {
@@ -297,21 +320,37 @@
     font-weight: 400;
     letter-spacing: 0.06em;
     font-size: 35px;
+    font-size: 25px;
+    text-align: center;
 }
 
 .ds__block--right h3 {
     font-weight: 400;
     letter-spacing: 0.06em;
     font-size: 15px;
+    text-align: center;
 }
 
 .dbr__btn {
     background: #F1CDB3;
     border-radius: 9px;
     padding: 10px 15px;
-    width: 349px;
+    width: 281px;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dbr__btn h1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
 }
 
 .ds__block--right p {
@@ -370,6 +409,8 @@
     max-width: 278px;
     width: 100%;
     color: #fff;
+    font-size: 25px;
+    text-align: center;
 }
 
 .fbl__content h1 {
@@ -379,4 +420,64 @@
     max-width: 270px;
     width: 100%;
     color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .obr__pets-1 {
+        display: none;
+    }
+
+    .hss__block--center,
+    .hss__block--right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .fs__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .header__house {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .ds__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .footer__block {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 65px;
+    }
+
+    .hh__right img {
+        justify-self: center;
+    }
+}
+
+@media(max-width:320px) {
+
+    .hh__right img,
+    .ds__block--left img {
+        width: 260px;
+        justify-self: center;
+    }
+
+    .hn__list {
+        display: none;
+    }
+
+    .ofs__block--center {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

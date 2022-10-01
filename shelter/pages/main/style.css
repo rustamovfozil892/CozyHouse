@@ -24,6 +24,10 @@
     align-items: center;
 }
 
+.header__nav a>img {
+    display: none;
+}
+
 .hn__logo {
     text-decoration: none;
 }
@@ -216,11 +220,9 @@
     letter-spacing: 0.06em;
 }
 
-.obr__pets-1 {
-    display: none;
-}
-
-.obr__pets-btn {
+.obr__pets-btn,
+.obr__pets-btn-1,
+.obr__pets-btn-2 {
     background: #fff;
     border-radius: 100px;
     font-family: 'Times New Roman';
@@ -232,7 +234,9 @@
     cursor: pointer;
 }
 
-.obr__pets-btn:hover {
+.obr__pets-btn:hover,
+.obr__pets-btn-1:hover,
+.obr__pets-btn-2:hover {
     background: #f1cdb3;
     transition: all .9s;
 }
@@ -424,60 +428,64 @@
     text-align: center;
 }
 
-@media(max-width:768px) {
-    .obr__pets-1 {
-        display: none;
-    }
-
-    .hss__block--center,
-    .hss__block--right {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .fs__block {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 80px;
-    }
-
-    .header__house {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 100px;
-    }
-
-    .ds__block {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 60px;
-    }
-
-    .footer__block {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 65px;
-    }
-
-    .hh__right img {
-        justify-self: center;
-    }
+.modal-container,
+.modal-container1,
+.modal-container2 {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
-@media(max-width:320px) {
+.active,
+.active1,
+.active g2 {
+    display: flex;
+}
 
-    .hh__right img,
-    .ds__block--left img {
-        width: 260px;
-        justify-self: center;
-    }
+.mc__cards {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 10px 9px;
+    width: 659px;
+    height: 350px;
+    margin: 0 auto;
+}
 
-    .hn__list {
-        display: none;
-    }
+.mcc__content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-    .ofs__block--center {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.mcc__content h1 {
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.06em;
+}
+
+.mcc__content h3 {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.swiper {
+    width: 800px;
+    height: 500px;
 }

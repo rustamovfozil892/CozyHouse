@@ -72,9 +72,17 @@
 }
 
 .hn__list-link:hover {
+    transition: all .9s;
+}
+
+.hn__list-link::before:hover {
+    text-decoration: dotted;
+    text-decoration-color: solid darkgoldenrod;
+}
+
+.hn__list-link::after:hover {
     text-decoration: underline;
     text-decoration-color: darkgoldenrod;
-    transition: all .9s;
 }
 
 .hh__left {

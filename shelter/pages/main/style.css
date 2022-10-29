@@ -18,6 +18,10 @@
     padding-top: 56px;
 }
 
+.nav__burger {
+    display: none;
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
@@ -69,20 +73,6 @@
     font-size: 15px;
     line-height: 160%;
     color: #fafafa;
-}
-
-.hn__list-link:hover {
-    transition: all .9s;
-}
-
-.hn__list-link::before:hover {
-    text-decoration: dotted;
-    text-decoration-color: solid darkgoldenrod;
-}
-
-.hn__list-link::after:hover {
-    text-decoration: underline;
-    text-decoration-color: darkgoldenrod;
 }
 
 .hh__left {
@@ -452,9 +442,7 @@
     width: 100%;
 }
 
-.active,
-.active1,
-.active g2 {
+.active {
     display: flex;
 }
 
@@ -496,4 +484,28 @@
 .swiper {
     width: 800px;
     height: 500px;
+}
+
+@media(max-width:768px) {
+    .hn__list.active {
+        display: flex;
+    }
+
+    /* BURGER MENU */
+    .nav__burger {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        cursor: pointer;
+    }
+
+    .nav__burger-span {
+        height: 2px;
+        width: 30px;
+        background-color: #f1cdb3;
+    }
+
+    .hn__list {
+        display: none;
+    }
 }
